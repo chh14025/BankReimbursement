@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type="text/css" href = "../resources/signup.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+          	<a class="navbar-brand" href="#"><img src = "../images/revlogo.png" alt = "Revature Logo Here" width = "150"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class = "nav-item">
+                    <a href="http://localhost:8080/ReimbursementProject/bank" class="btn btn-outline-warning">Return Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+
+
+    <header class = "page-header gradient" >
+
+
+        <div id="signup">        
+            <div class="container" id = "signupcontainer">
+                <div id="signup-row" class="row justify-content-center align-items-center">
+                    <div id="signup-column" class="col-md-6">
+                        <div id="signup-box" class="col-md-12">
+                            <form id="signup-form" class="form" action = "http://localhost:8080/ReimbursementProject/bank/success" method="post">
+                                <h3 class="text-center text-success">New User</h3>
+                                <div class="form-group">
+                                    <label for="username" class="text-success">New Username:</label><br>
+                                    <input type="text" name="username" required="required" id="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text-success">New Password:</label><br>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-success">Confirm Password:</label><br>
+                                    <input type="password" id="confirm_password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" id = "confirm_submit"class="btn btn-success btn-md" value="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ebba00" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,202.7C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        <!-- <text x="670" y="300">End of Page</text> -->
+      </svg>
+    
+    </header>
+
+    <script src="../resources/passconf.js"></script>
+    <script src="../resources/newajax.js"></script>
+    
+
+</body>
+</html>
