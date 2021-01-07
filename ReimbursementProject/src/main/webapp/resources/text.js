@@ -159,7 +159,7 @@ function approve(clicked_id){
         swal("Ticket Approved", "redirecting...", "success");
         setTimeout(function(){
    		window.location.reload(1);
-		}, 3000);
+		}, 1000);
 }
 
 function reject(clicked_id){
@@ -204,6 +204,6 @@ function reject(clicked_id){
         swal("Ticket Denied", "redirecting...", "success");
         setTimeout(function(){
    		window.location.reload(1);
-		}, 3000);
+		}, 1000);
 }
 

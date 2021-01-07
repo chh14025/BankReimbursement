@@ -45,7 +45,8 @@ public class TicketController {
 			HttpSession session = req.getSession(true);
 			Users u = (Users) session.getAttribute("user");
 			int i = Integer.parseInt(req.getParameter("ticketType"));
-			rService.newTicket(i, req.getParameter("comment"), u.getUserId());
+			double d = Double.parseDouble(req.getParameter("amount"));
+			rService.newTicket(i, req.getParameter("comment"), u.getUserId(), d);
 			resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/empLanding");
 			
 		}else {

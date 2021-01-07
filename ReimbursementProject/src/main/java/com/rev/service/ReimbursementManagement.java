@@ -18,14 +18,17 @@ public class ReimbursementManagement {
 		return t;
 	}
 	
-	public boolean newEmp(String username, String pass) {
+	public boolean newEmp(String username, String pass, int stat, String first, String last, String email) {
 		System.out.println("create new employee");
 
 			Users u = new Users();
 			u.setUserId(0);
 			u.setUsername(username);
 			u.setPass(pass);
-			u.setUserStatus(1);
+			u.setUserStatus(stat);
+			u.setFirstName(first);
+			u.setLastName(last);
+			u.setEmail(email);
 			
 			
 			rDao.createNewUser(u);
@@ -48,13 +51,14 @@ public class ReimbursementManagement {
 		return t;
 	}
 	
-	public boolean newTicket(int ticketType, String description, int employeeId) {
+	public boolean newTicket(int ticketType, String description, int employeeId, double amount) {
 		System.out.println("create new ticket");
 		Tickets t= new Tickets();
 		t.setTicketStatus(1);
 		t.setTicketType(ticketType);
 		t.setDescription(description);
 		t.setEmployeeId(employeeId);
+		t.setAmount(amount);
 		rDao.createNewTicket(t);
 		boolean bool = true;
 		return bool;

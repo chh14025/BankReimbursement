@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.rev.pojo.Users;
+import com.rev.util.Loggy;
 
 public class LandingController {
 	
@@ -35,6 +36,13 @@ public class LandingController {
 			
 	}	
 	
+	public static void AdminSignup(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException{
+		RequestDispatcher redis = req.getRequestDispatcher("/adminsignup.html");
+		redis.forward(req, resp);
+		
+	}
+	
 	public static void getTicket(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException{		
 		RequestDispatcher redis = req.getRequestDispatcher("/allticket.html");
@@ -48,9 +56,16 @@ public class LandingController {
 		if(req.getSession(false) != null) {
 			HttpSession session = req.getSession(true);
 			Users u = (Users) session.getAttribute("user");
-			System.out.println(u + "in employee html");
-			RequestDispatcher redis = req.getRequestDispatcher("/employee.html");
-			redis.forward(req, resp);
+			if (u.getUserStatus() == 1) {
+				System.out.println(u + "in employee html");
+				RequestDispatcher redis = req.getRequestDispatcher("/employee.html");
+				redis.forward(req, resp);
+			}else if (u.getUserStatus() ==2 ) {
+				System.out.println(u + "in admin html");
+
+				RequestDispatcher redis = req.getRequestDispatcher("/manager.html");
+				redis.forward(req, resp);
+			}
 		}else {
 			resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/login");
 		}
@@ -60,7 +75,7 @@ public class LandingController {
 
 	public static void logout(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		req.getSession().invalidate();
-		System.out.println("invalidated");
+		Loggy.info("invalidated");
 		resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank");
 		return; 
 	}
@@ -82,6 +97,14 @@ public class LandingController {
 			throws ServletException, IOException{
 		
 		RequestDispatcher redis = req.getRequestDispatcher("/success.html");
+		redis.forward(req, resp);
+		
+	}
+	
+	public static void failPage(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException{
+		
+		RequestDispatcher redis = req.getRequestDispatcher("/fail.html");
 		redis.forward(req, resp);
 		
 	}

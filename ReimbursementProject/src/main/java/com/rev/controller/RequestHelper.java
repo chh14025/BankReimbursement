@@ -56,6 +56,7 @@ public class RequestHelper {
 				break;
 			case "GET":
 				UserController.getAllUser(req, resp);
+				break;
 			}
 			break;
 			
@@ -95,6 +96,19 @@ public class RequestHelper {
 		case "/ReimbursementProject/bank/success":
 			System.out.println("In the ticket landing page");
 			LandingController.successPage(req, resp);
+			break;
+		case "/ReimbursementProject/bank/fail":
+			System.out.println("In the ticket landing page");
+			LandingController.failPage(req, resp);
+			break;
+			
+		case "/ReimbursementProject/bank/check":
+			System.out.println("In the ticket landing page");
+			UserController.SigninCheck(req, resp);
+			break;
+		case "/ReimbursementProject/bank/adminSignup":
+			System.out.println("In the admin signup page");
+			LandingController.AdminSignup(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank":

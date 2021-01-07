@@ -22,13 +22,9 @@ public class UserController {
 	public static void postNewUser(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException{
 			if(req.getMethod().equals("POST")) {
-				System.out.println("inside postnewuser");
-				String username = req.getParameter("username");
-				System.out.println(username);
-				System.out.println(req.getAttribute("username"));
 				Users u = new ObjectMapper().readValue(req.getReader(), com.rev.pojo.Users.class);
-				System.out.println(u);
-				rService.newEmp(u.getUsername(),u.getPass());
+				System.out.println("printing out: " + u);
+				rService.newEmp(u.getUsername(),u.getPass(),u.getUserStatus(), u.getFirstName(), u.getLastName(), u.getEmail());
 
 			} else {
 				resp.setStatus(400);
@@ -59,12 +55,13 @@ public class UserController {
 					}else if (u != null && (u.getUserStatus() == 2)){
 						session.setAttribute("ManagerAccess", true);
 						session.setAttribute("user", u);
-						resp.setStatus(200);
+						resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/empLanding");
 					}else{
 						resp.setStatus(403);
 					}
 				}else {
-					resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/login");
+					//resp.setStatus(404);
+					resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/fail");
 				}
 
 			} else {
@@ -72,6 +69,27 @@ public class UserController {
 			}
 			
 		}
+	
+	public static void SigninCheck(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException{
+			if(req.getMethod().equals("POST")) {
+				System.out.println("inside sign in post page");
+				Users u = new ObjectMapper().readValue(req.getReader(), com.rev.pojo.Users.class);
+				
+				
+//			    String uname = req.getParameter("username");
+//			    String upass = req.getParameter("pass");
+			    System.out.println(u.getUsername() +" " +u.getPass());
+			    
+				u = rService.signIn(u.getUsername(),u.getPass());
+				
+				if(u != null) {
+					resp.setStatus(200);
+				}else {
+					resp.setStatus(404);
+				}
+			}
+	}
 	
 	public static void getUserTicket(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException{
@@ -110,6 +128,8 @@ public class UserController {
 			
 		
 	}
+
+
 	
 	
 				

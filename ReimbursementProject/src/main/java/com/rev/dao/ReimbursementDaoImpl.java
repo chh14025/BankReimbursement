@@ -1,5 +1,6 @@
 package com.rev.dao;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -24,13 +25,16 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 			System.out.println(conn);
 			
 	
-			String sql = "insert into users(Username, Pass, Status) "
-					+ "values(?,?,?);";
+			String sql = "insert into users(Username, Pass, Status, FirstName, LastName, Email) "
+					+ "values(?,?,?,?,?,?);";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
 			ps.setString(1, u.getUsername());
 			ps.setString(2, u.getPass());
 			ps.setInt(3, u.getUserStatus());
+			ps.setString(4, u.getFirstName());
+			ps.setString(5, u.getLastName());
+			ps.setString(6, u.getEmail());
 	
 	
 			ps.execute();
@@ -44,16 +48,16 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 	
 	public void createNewTicket(Tickets t) {
 		try(Connection conn = ConnectionCenter.getConnection()){
-			System.out.println(conn);
-			String sql = "insert into tickets(TicketStatus, TicketType,Description,EmployeeId) values(?,?,?,?);";
+			String sql = "CALL newTicket(?, ?, ?, ?, ?);";
 			
-			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, t.getTicketStatus());
-			ps.setInt(2, t.getTicketType());
-			ps.setString(3, t.getDescription());
-			ps.setInt(4, t.getEmployeeId());
-			
-			ps.execute();
+			CallableStatement cs = conn.prepareCall(sql);
+			cs.setInt(1, t.getTicketStatus());
+			cs.setInt(2, t.getTicketType());
+			cs.setString(3, t.getDescription());
+			cs.setInt(4, t.getEmployeeId());
+			cs.setDouble(5, t.getAmount());
+			cs.executeUpdate();
+
 
 			
 		} catch (SQLException e) {
@@ -80,6 +84,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				t.setDescription(rs.getString(4));
 				t.setSubmitTime(rs.getString(5));
 				t.setEmployeeId(rs.getInt(6));
+				t.setAmount(rs.getDouble(7));
 				tickets.add(t);
 			}
 		} catch (SQLException e) {
@@ -99,6 +104,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 			
 			ResultSet rs = ps.executeQuery(); //We are executing our SQL statement
 			
+			
 			while(rs.next()) {
 				Tickets t = new Tickets();
 				t.setTicketNumber(rs.getInt(1));
@@ -107,6 +113,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				t.setDescription(rs.getString(4));
 				t.setSubmitTime(rs.getString(5));
 				t.setEmployeeId(rs.getInt(6));
+				t.setAmount(rs.getDouble(7));
 				tickets.add(t);
 			}
 		} catch (SQLException e) {
@@ -137,6 +144,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				t.setDescription(rs.getString(4));
 				t.setSubmitTime(rs.getString(5));
 				t.setEmployeeId(rs.getInt(6));
+				t.setAmount(rs.getDouble(7));
 				tickets.add(t);
 			}
 		} catch (SQLException e) {
@@ -168,6 +176,8 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				tickets.setDescription(rs.getString(4));
 				tickets.setSubmitTime(rs.getString(5));
 				tickets.setEmployeeId(rs.getInt(6));
+				tickets.setAmount(rs.getDouble(7));
+
 				t.add(tickets);
 			}
 		} catch (SQLException e) {
@@ -198,6 +208,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				tickets.setDescription(rs.getString(4));
 				tickets.setSubmitTime(rs.getString(5));
 				tickets.setEmployeeId(rs.getInt(6));
+				tickets.setAmount(rs.getDouble(7));
 			}
 			
 		}catch(SQLException e) {
@@ -261,6 +272,9 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				user.setUsername(rs.getString(2));
 				user.setPass(rs.getString(3));
 				user.setUserStatus(rs.getInt(4));
+				user.setFirstName(rs.getString(5));
+				user.setLastName(rs.getString(6));
+				user.setEmail(rs.getString(7));
 				users.add(user);
 			}
 			
@@ -287,9 +301,13 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 			
 			while(rs.next()) {
 				Users user = new Users();
-				user.setUsername(rs.getString(1));
-				user.setPass(rs.getString(2));
-				user.setUserStatus(rs.getInt(3));
+				user.setUserId(rs.getInt(1));
+				user.setUsername(rs.getString(2));
+				user.setPass(rs.getString(3));
+				user.setUserStatus(rs.getInt(4));
+				user.setFirstName(rs.getString(5));
+				user.setLastName(rs.getString(6));
+				user.setEmail(rs.getString(7));
 				users.add(user);
 			}
 			
@@ -320,6 +338,9 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				user.setUsername(rs.getString(2));
 				user.setPass(rs.getString(3));
 				user.setUserStatus(rs.getInt(4));
+				user.setFirstName(rs.getString(5));
+				user.setLastName(rs.getString(6));
+				user.setEmail(rs.getString(7));
 				users.add(user);
 			}
 			
@@ -347,9 +368,13 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 			
 			while(rs.next()) {
 				user = new Users();
-				user.setUsername(rs.getString(1));
-				user.setPass(rs.getString(2));
-				user.setUserStatus(rs.getInt(3));
+				user.setUserId(rs.getInt(1));
+				user.setUsername(rs.getString(2));
+				user.setPass(rs.getString(3));
+				user.setUserStatus(rs.getInt(4));
+				user.setFirstName(rs.getString(5));
+				user.setLastName(rs.getString(6));
+				user.setEmail(rs.getString(7));
 			}
 			
 		}catch(SQLException e) {
@@ -406,6 +431,7 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				t.setDescription(rs.getString(4));
 				t.setSubmitTime(rs.getString(5));
 				t.setEmployeeId(rs.getInt(6));
+				t.setAmount(rs.getDouble(7));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
