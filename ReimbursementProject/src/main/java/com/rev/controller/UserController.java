@@ -1,6 +1,7 @@
 package com.rev.controller;
 
 import java.io.IOException;
+import java.lang.invoke.MethodHandles;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rev.pojo.Tickets;
 import com.rev.pojo.Users;
@@ -18,6 +21,8 @@ import com.rev.service.ReimbursementManagement;
 public class UserController {
 	
 	private static ReimbursementManagement rService = new ReimbursementManagement();
+	private static Logger loggy = Logger.getLogger(MethodHandles.lookup().lookupClass().getSimpleName());
+
 	
 	public static void postNewUser(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException{
@@ -76,9 +81,7 @@ public class UserController {
 				System.out.println("inside sign in post page");
 				Users u = new ObjectMapper().readValue(req.getReader(), com.rev.pojo.Users.class);
 				
-				
-//			    String uname = req.getParameter("username");
-//			    String upass = req.getParameter("pass");
+
 			    System.out.println(u.getUsername() +" " +u.getPass());
 			    
 				u = rService.signIn(u.getUsername(),u.getPass());

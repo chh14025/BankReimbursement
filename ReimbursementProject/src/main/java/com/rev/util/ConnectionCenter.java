@@ -5,10 +5,11 @@ import java.sql.*;
 
 public class ConnectionCenter {
 	
+	
 	private static Connection conn;
-	private static final String URL = "";
-	private static final String USERNAME = "";
-	private static final String PASSWORD = "";
+	private static final String URL = "jdbc:postgresql://planet-db.cajbwopfnhwq.us-east-2.rds.amazonaws.com/postgres";
+	private static final String USERNAME = "postgres";
+	private static final String PASSWORD = "jowill7!";
 	
 	
 	public static Connection getConnection() {
@@ -21,10 +22,8 @@ public class ConnectionCenter {
 			}
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

@@ -1,7 +1,10 @@
 package com.rev.service;
 
+import java.lang.invoke.MethodHandles;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.log4j.Logger;
 
 import com.rev.dao.ReimbursementDao;
 import com.rev.dao.ReimbursementDaoImpl;
@@ -9,8 +12,16 @@ import com.rev.pojo.Tickets;
 import com.rev.pojo.Users;
 
 public class ReimbursementManagement {
+	private static Logger loggy = Logger.getLogger(MethodHandles.lookup().lookupClass().getSimpleName());
+
 	
-	private ReimbursementDao rDao = new ReimbursementDaoImpl();
+	public ReimbursementDao rDao = new ReimbursementDaoImpl();
+	
+	public ReimbursementManagement() {};
+	
+	public ReimbursementManagement(ReimbursementDao rDao) {
+		this.rDao = rDao;
+	}
 
 	
 	public List<Tickets> getTickeByUserId(int userId) {
@@ -18,8 +29,8 @@ public class ReimbursementManagement {
 		return t;
 	}
 	
-	public boolean newEmp(String username, String pass, int stat, String first, String last, String email) {
-		System.out.println("create new employee");
+	public void newEmp(String username, String pass, int stat, String first, String last, String email) {
+		loggy.info("create new employee");
 
 			Users u = new Users();
 			u.setUserId(0);
@@ -32,14 +43,21 @@ public class ReimbursementManagement {
 			
 			
 			rDao.createNewUser(u);
-			boolean bool = true;
-		return bool;
 	}
 	
-	public Users getUsers(String username) {
+	protected Users getUsers(String username) {
+		loggy.info("create new users");
 		Users u = rDao.getUserByUsername(username);
-		return u;
+		Users validate;
+		if (u == null) {
+			validate = null;
+		}else {
+			validate = u;
+		}
+		return validate;
 	}
+	
+	
 	
 	public List<Users> getAllEmp(){
 		List<Users> u = rDao.getAllEmployee();
@@ -51,7 +69,7 @@ public class ReimbursementManagement {
 		return t;
 	}
 	
-	public boolean newTicket(int ticketType, String description, int employeeId, double amount) {
+	public void newTicket(int ticketType, String description, int employeeId, double amount) {
 		System.out.println("create new ticket");
 		Tickets t= new Tickets();
 		t.setTicketStatus(1);
@@ -60,8 +78,6 @@ public class ReimbursementManagement {
 		t.setEmployeeId(employeeId);
 		t.setAmount(amount);
 		rDao.createNewTicket(t);
-		boolean bool = true;
-		return bool;
 	}
 	
 	public boolean updateTicket(int approval, int ticketnum) {
@@ -70,9 +86,10 @@ public class ReimbursementManagement {
 		t = rDao.ticketApproval(approval, ticketnum);
 		
 		if (t != null) {
+			loggy.info("updated correctly");
 			bool = true;
 		}else {
-			System.out.println("didn't update correctly");
+			loggy.warn("didn't update correctly");
 		}
 		return bool;
 	}
@@ -93,7 +110,7 @@ public class ReimbursementManagement {
 	}
 	
 	public List<Users> getAllUser(){
-		List<Users> u = new ArrayList<>();
+		List<Users> u;
 		u = rDao.getAllUsers();
 		return u;
 	}

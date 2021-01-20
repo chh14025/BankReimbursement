@@ -38,7 +38,8 @@ function validatePassword(){
 	
 }
 
-let submit = document.getElementById("confirm_submit");
-submit.onkeydown = validatePassword;
-//password.onchange = validatePassword;
+//let submit = document.getElementById("confirm_submit");
+//submit.onkeydown = validatePassword;
+username.onchange = validatePassword;
+password.onchange = validatePassword;
 

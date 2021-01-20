@@ -1,21 +1,30 @@
 package com.rev.controller;
 
 import java.io.IOException;
+import java.lang.invoke.MethodHandles;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
+
 public class RequestHelper {
 	
+	private static Logger loggy = Logger.getLogger(MethodHandles.lookup().lookupClass().getSimpleName());
+	
+	  	
 	public static void process (HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException{
+		loggy.setLevel(Level.ALL);
 		String endpoint = req.getRequestURI();
-		System.out.println(endpoint);
+		loggy.info(endpoint);
 		
 		switch(endpoint) {	
 		case "/ReimbursementProject/bank/employee":
-			System.out.println("Inside employee");
+			loggy.info("Inside bank employee");
 			switch(req.getMethod()) {
 			case "POST":
 				UserController.postSignin(req,resp);
@@ -32,6 +41,7 @@ public class RequestHelper {
 			break;
 			
 		case "/ReimbursementProject/bank/ticket":
+			loggy.info("Inside bank ticket");
 			switch(req.getMethod()) {
 			case "POST":
 				TicketController.newTicket(req,resp);
@@ -49,7 +59,7 @@ public class RequestHelper {
 			break;
 			
 		case "/ReimbursementProject/bank/confirm":
-			System.out.println("Inside confirm");
+			loggy.info("Inside user confirmation");
 			switch(req.getMethod()) {
 			case "POST":
 				UserController.postNewUser(req, resp);
@@ -61,67 +71,63 @@ public class RequestHelper {
 			break;
 			
 		case "/ReimbursementProject/bank/login":
-			System.out.println("Inside login");
+			loggy.info("Inside login");
 			LandingController.getLogin(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/signup":
-			System.out.println("Inside signup");
+			loggy.info("Inside signup");
 			LandingController.getSignup(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/getTicket":
-			System.out.println("Inside getTicket");
+			loggy.info("Inside getTicket");
 			LandingController.getTicket(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/empLanding":
-			System.out.println("Inside empLanding");
+			loggy.info("Inside empLanding");
 			LandingController.getEmpPage(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/newTicket":
-			System.out.println("Inside empLanding");
+			loggy.info("Inside empLanding");
 			LandingController.postNewTicket(req, resp);
 			break;
 		case "/ReimbursementProject/bank/logout":
-			System.out.println("In the home page");
+			loggy.info("In the home page");
 			LandingController.logout(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/ticketLanding":
-			System.out.println("In the ticket landing page");
+			loggy.info("In the ticket landing page");
 			LandingController.ticketLanding(req, resp);
 			break;
 		case "/ReimbursementProject/bank/success":
-			System.out.println("In the ticket landing page");
+			loggy.info("In the ticket landing page");
 			LandingController.successPage(req, resp);
 			break;
 		case "/ReimbursementProject/bank/fail":
-			System.out.println("In the ticket landing page");
+			loggy.info("In the ticket landing page");
 			LandingController.failPage(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank/check":
-			System.out.println("In the ticket landing page");
+			loggy.info("In the ticket landing page");
 			UserController.SigninCheck(req, resp);
 			break;
 		case "/ReimbursementProject/bank/adminSignup":
-			System.out.println("In the admin signup page");
+			loggy.info("In the admin signup page");
 			LandingController.AdminSignup(req, resp);
 			break;
 			
 		case "/ReimbursementProject/bank":
-			System.out.println("In the home page");
+			loggy.info("In the home page");
 			LandingController.getHomePage(req, resp);
 			break;
-			
-
-
-
-
 		default:
-			System.out.println("Nothing here");
+			loggy.info("In default home page");
+			LandingController.getHomePage(req, resp);
 			break;
 			
 		}

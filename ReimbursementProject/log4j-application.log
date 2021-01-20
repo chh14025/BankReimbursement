@@ -1,4 +1,293 @@
-2021-01-07 00:20:09 INFO  ReimbursementManagement:21 - invalidated
-2021-01-07 00:21:00 INFO  ReimbursementManagement:21 - invalidated
-2021-01-07 00:21:31 INFO  ReimbursementManagement:21 - invalidated
-2021-01-07 00:30:08 INFO  ReimbursementManagement:21 - invalidated
+2021-01-07 23:09:44 INFO  Loggy:20 - invalidated
+2021-01-07 23:12:58 INFO  Loggy:22 - In the home page
+2021-01-07 23:13:09 INFO  Loggy:22 - invalidated
+2021-01-07 23:16:14 INFO  Loggy:20 - invalidated
+2021-01-07 23:20:52 INFO  RequestHelper:125 - In the home page
+2021-01-07 23:21:02 INFO  LandingController:86 - invalidated
+2021-01-07 23:22:16 INFO  LandingController:84 - invalidated
+2021-01-08 23:57:24 INFO  RequestHelper:125 - In the home page
+2021-01-09 00:05:03 INFO  LandingController:84 - invalidated
+2021-01-09 00:14:18 INFO  LandingController:84 - invalidated
+2021-01-09 00:21:35 INFO  LandingController:84 - invalidated
+2021-01-10 15:44:47 INFO  RequestHelper:125 - In the home page
+2021-01-10 15:46:36 INFO  LandingController:84 - invalidated
+2021-01-10 15:48:08 INFO  LandingController:84 - invalidated
+2021-01-10 15:48:33 INFO  LandingController:84 - invalidated
+2021-01-10 16:14:48 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:14:48 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:14:50 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:14:50 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:14:51 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 16:14:51 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 16:14:51 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 16:14:51 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 16:14:51 INFO  LandingController:67 - Users [userId=15, username=chh, pass=123, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-10 16:14:55 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 16:14:55 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 16:15:15 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 16:15:15 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 16:15:18 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 16:15:18 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 16:15:18 INFO  LandingController:67 - Users [userId=15, username=chh, pass=123, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-10 16:15:20 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 16:15:20 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 16:15:25 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 16:15:25 INFO  RequestHelper:98 - In the home page
+2021-01-10 16:15:25 INFO  LandingController:85 - session invalidated
+2021-01-10 16:15:32 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:15:32 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:15:35 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:15:35 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:15:37 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 16:15:37 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 16:15:37 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 16:15:37 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 16:15:37 INFO  LandingController:71 - Users [userId=9, username=admin, pass=admin, userStatus=2, firstName=William, lastName=He, email=emil@gmail.com]in admin html
+2021-01-10 16:15:40 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 16:15:40 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 16:15:47 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 16:15:47 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 16:15:47 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-10 16:15:48 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-10 16:15:48 INFO  RequestHelper:84 - Inside getTicket
+2021-01-10 16:15:48 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 16:15:48 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 16:15:51 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 16:15:51 INFO  RequestHelper:98 - In the home page
+2021-01-10 16:15:51 INFO  LandingController:85 - session invalidated
+2021-01-10 16:15:58 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 16:15:58 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 16:16:00 INFO  RequestHelper:23 - /ReimbursementProject/bank/adminSignup
+2021-01-10 16:16:00 INFO  RequestHelper:120 - In the admin signup page
+2021-01-10 16:16:00 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 16:16:00 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 16:16:36 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 16:16:36 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 16:16:36 INFO  ReimbursementManagement:33 - create new employee
+2021-01-10 16:16:36 INFO  RequestHelper:23 - /ReimbursementProject/bank/success
+2021-01-10 16:16:36 INFO  RequestHelper:107 - In the ticket landing page
+2021-01-10 16:16:49 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:16:49 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:16:51 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:16:51 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:16:54 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 16:16:54 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 16:16:55 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 16:16:55 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 16:16:55 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 16:16:55 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 16:16:55 INFO  LandingController:71 - Users [userId=16, username=newadmin, pass=newadmin, userStatus=2, firstName=will, lastName=he, email=admin@gmail.com]in admin html
+2021-01-10 16:16:57 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 16:16:57 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 16:17:10 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 16:17:10 INFO  RequestHelper:98 - In the home page
+2021-01-10 16:17:10 INFO  LandingController:85 - session invalidated
+2021-01-10 20:36:32 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 20:36:32 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 20:36:35 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 20:36:35 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 20:37:15 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-10 20:37:15 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-10 20:37:15 INFO  RequestHelper:23 - /ReimbursementProject/bank/success
+2021-01-10 20:37:15 INFO  RequestHelper:107 - In the ticket landing page
+2021-01-10 20:37:15 INFO  ReimbursementManagement:33 - create new employee
+2021-01-10 20:37:27 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:37:27 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:37:33 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:37:33 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:37:33 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 20:37:33 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 20:37:34 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 20:37:34 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 20:37:34 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-10 20:37:40 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 20:37:40 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 20:38:15 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:38:15 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:38:18 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 20:38:18 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 20:38:18 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-10 20:38:20 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 20:38:20 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 20:38:31 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 20:38:31 INFO  RequestHelper:98 - In the home page
+2021-01-10 20:38:31 INFO  LandingController:85 - session invalidated
+2021-01-10 20:38:36 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:38:36 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:38:40 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:38:40 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:38:43 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:38:43 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:38:57 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:38:57 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:38:59 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:38:59 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:38:59 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 20:38:59 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 20:39:00 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 20:39:00 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 20:39:00 INFO  LandingController:71 - Users [userId=9, username=admin, pass=admin, userStatus=2, firstName=William, lastName=He, email=emil@gmail.com]in admin html
+2021-01-10 20:39:07 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:39:07 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:39:25 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:39:25 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:39:26 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-10 20:39:26 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-10 20:39:26 INFO  RequestHelper:84 - Inside getTicket
+2021-01-10 20:39:26 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:39:26 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:39:28 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:39:28 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:39:29 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-10 20:39:29 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-10 20:39:29 INFO  RequestHelper:84 - Inside getTicket
+2021-01-10 20:39:29 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-10 20:39:29 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-10 20:39:49 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 20:39:49 INFO  RequestHelper:98 - In the home page
+2021-01-10 20:39:49 INFO  LandingController:85 - session invalidated
+2021-01-10 20:41:30 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:41:30 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:41:31 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-10 20:41:31 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-10 20:41:54 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-10 20:41:54 INFO  RequestHelper:27 - Inside bank employee
+2021-01-10 20:41:55 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-10 20:41:55 INFO  RequestHelper:89 - Inside empLanding
+2021-01-10 20:41:55 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-10 20:41:58 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-10 20:41:58 INFO  RequestHelper:98 - In the home page
+2021-01-10 20:41:58 INFO  LandingController:85 - session invalidated
+2021-01-11 14:13:43 INFO  ReimbursementManagement:49 - create new users
+2021-01-11 14:13:43 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-11 14:13:43 WARN  ReimbursementManagement:92 - didn't update correctly
+2021-01-11 14:17:59 INFO  RequestHelper:23 - /ReimbursementProject/bank
+2021-01-11 14:17:59 INFO  RequestHelper:125 - In the home page
+2021-01-11 14:18:02 INFO  RequestHelper:23 - /ReimbursementProject/bank/login
+2021-01-11 14:18:02 INFO  RequestHelper:74 - Inside login
+2021-01-11 14:18:05 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:18:05 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:18:06 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:18:06 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:18:07 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:18:07 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:18:07 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:18:07 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:18:07 INFO  LandingController:71 - Users [userId=9, username=admin, pass=admin, userStatus=2, firstName=William, lastName=He, email=emil@gmail.com]in admin html
+2021-01-11 14:18:09 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-11 14:18:09 INFO  RequestHelper:84 - Inside getTicket
+2021-01-11 14:18:09 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:18:09 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:18:16 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:18:16 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:18:16 INFO  LandingController:85 - session invalidated
+2021-01-11 14:18:21 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:18:21 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:18:23 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:18:23 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:18:23 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:18:23 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:18:24 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:18:24 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:18:24 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:18:28 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticketLanding
+2021-01-11 14:18:28 INFO  RequestHelper:103 - In the ticket landing page
+2021-01-11 14:18:28 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:18:28 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:18:31 INFO  RequestHelper:23 - /ReimbursementProject/bank/newTicket
+2021-01-11 14:18:31 INFO  RequestHelper:94 - Inside empLanding
+2021-01-11 14:18:41 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:18:41 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:18:44 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:18:44 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:18:44 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:18:46 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:18:46 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:18:50 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:18:50 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:18:50 INFO  LandingController:85 - session invalidated
+2021-01-11 14:21:17 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:21:17 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:21:19 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:21:19 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:21:20 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:21:20 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:21:21 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:21:21 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:21:21 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:34:57 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:34:57 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:35:17 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:35:17 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:35:17 INFO  LandingController:85 - session invalidated
+2021-01-11 14:39:35 INFO  RequestHelper:23 - /ReimbursementProject/bank
+2021-01-11 14:39:35 INFO  RequestHelper:125 - In the home page
+2021-01-11 14:39:54 INFO  RequestHelper:23 - /ReimbursementProject/bank/signup
+2021-01-11 14:39:54 INFO  RequestHelper:79 - Inside signup
+2021-01-11 14:39:54 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-11 14:39:54 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-11 14:40:00 INFO  RequestHelper:23 - /ReimbursementProject/bank/adminSignup
+2021-01-11 14:40:00 INFO  RequestHelper:120 - In the admin signup page
+2021-01-11 14:40:00 INFO  RequestHelper:23 - /ReimbursementProject/bank/confirm
+2021-01-11 14:40:00 INFO  RequestHelper:62 - Inside user confirmation
+2021-01-11 14:40:14 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:40:14 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:40:16 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:40:16 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:40:18 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:40:18 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:40:18 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:40:18 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:40:18 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:40:52 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:40:52 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:40:54 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:40:54 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:40:54 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:41:04 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:41:04 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:41:23 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:41:23 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:41:23 INFO  LandingController:85 - session invalidated
+2021-01-11 14:41:28 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:41:28 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:41:30 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:41:30 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:41:31 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:41:31 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:41:32 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:41:32 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:41:32 INFO  LandingController:71 - Users [userId=9, username=admin, pass=admin, userStatus=2, firstName=William, lastName=He, email=emil@gmail.com]in admin html
+2021-01-11 14:41:34 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:41:34 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:41:51 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:41:51 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:41:52 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-11 14:41:52 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-11 14:41:52 INFO  RequestHelper:84 - Inside getTicket
+2021-01-11 14:41:53 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:41:53 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:41:55 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:41:55 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:41:55 INFO  ReimbursementManagement:89 - updated correctly
+2021-01-11 14:41:56 INFO  RequestHelper:23 - /ReimbursementProject/bank/getTicket
+2021-01-11 14:41:56 INFO  RequestHelper:84 - Inside getTicket
+2021-01-11 14:41:56 INFO  RequestHelper:23 - /ReimbursementProject/bank/ticket
+2021-01-11 14:41:56 INFO  RequestHelper:44 - Inside bank ticket
+2021-01-11 14:42:03 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:42:03 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:42:03 INFO  LandingController:85 - session invalidated
+2021-01-11 14:42:10 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:42:10 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:42:12 INFO  RequestHelper:23 - /ReimbursementProject/bank/check
+2021-01-11 14:42:12 INFO  RequestHelper:116 - In the ticket landing page
+2021-01-11 14:42:12 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:42:12 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:42:13 INFO  RequestHelper:23 - /ReimbursementProject/bank/empLanding
+2021-01-11 14:42:13 INFO  RequestHelper:89 - Inside empLanding
+2021-01-11 14:42:13 INFO  LandingController:67 - Users [userId=5, username=name, pass=pass, userStatus=1, firstName=first, lastName=last, email=billyhe227@gmail.com]in employee html
+2021-01-11 14:42:15 INFO  RequestHelper:23 - /ReimbursementProject/bank/employee
+2021-01-11 14:42:15 INFO  RequestHelper:27 - Inside bank employee
+2021-01-11 14:45:16 INFO  RequestHelper:23 - /ReimbursementProject/bank/logout
+2021-01-11 14:45:16 INFO  RequestHelper:98 - In the home page
+2021-01-11 14:45:16 INFO  LandingController:85 - session invalidated

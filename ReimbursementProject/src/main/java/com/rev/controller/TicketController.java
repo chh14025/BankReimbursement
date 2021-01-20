@@ -1,6 +1,7 @@
 package com.rev.controller;
 
 import java.io.IOException;
+import java.lang.invoke.MethodHandles;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -9,14 +10,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rev.pojo.Tickets;
 import com.rev.pojo.Users;
 import com.rev.service.ReimbursementManagement;
+import com.rev.util.JavaMailUtil;
 
 public class TicketController {
 	
 	private static ReimbursementManagement rService = new ReimbursementManagement();
+	private static Logger loggy = Logger.getLogger(MethodHandles.lookup().lookupClass().getSimpleName());
+
 	
 	public static void getTicket(HttpServletRequest req, HttpServletResponse resp)
 		throws ServletException, IOException{
@@ -47,6 +53,11 @@ public class TicketController {
 			int i = Integer.parseInt(req.getParameter("ticketType"));
 			double d = Double.parseDouble(req.getParameter("amount"));
 			rService.newTicket(i, req.getParameter("comment"), u.getUserId(), d);
+			try {
+				JavaMailUtil.sendMail(u.getEmail());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			resp.sendRedirect("http://localhost:8080/ReimbursementProject/bank/empLanding");
 			
 		}else {
@@ -64,6 +75,7 @@ public class TicketController {
 				Tickets t = new ObjectMapper().readValue(req.getReader(), com.rev.pojo.Tickets.class);
 				System.out.println(t);	
 				rService.updateTicket(t.getTicketStatus(), t.getTicketNumber());
+				
 				resp.setStatus(200);
 			}else {
 				resp.setStatus(400);

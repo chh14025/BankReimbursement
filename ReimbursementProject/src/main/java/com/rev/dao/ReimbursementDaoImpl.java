@@ -17,12 +17,12 @@ import com.rev.util.ConnectionCenter;
 
 public class ReimbursementDaoImpl implements ReimbursementDao{
 	
+	
 	public void createNewUser(Users u) {
 		System.out.println("Creating new user");
 		
 		try(Connection conn = ConnectionCenter.getConnection();){
-			System.out.println("Connection");
-			System.out.println(conn);
+
 			
 	
 			String sql = "insert into users(Username, Pass, Status, FirstName, LastName, Email) "
@@ -240,6 +240,9 @@ public class ReimbursementDaoImpl implements ReimbursementDao{
 				user.setUsername(rs.getString(2));
 				user.setPass(rs.getString(3));
 				user.setUserStatus(rs.getInt(4));
+				user.setFirstName(rs.getString(5));
+				user.setLastName(rs.getString(6));
+				user.setEmail(rs.getString(7));
 			}
 			return user;
 			
