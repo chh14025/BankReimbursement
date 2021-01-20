@@ -7,9 +7,9 @@ public class ConnectionCenter {
 	
 	
 	private static Connection conn;
-	private static final String URL = "jdbc:postgresql://planet-db.cajbwopfnhwq.us-east-2.rds.amazonaws.com/postgres";
-	private static final String USERNAME = "postgres";
-	private static final String PASSWORD = "jowill7!";
+	private static final String URL = "";
+	private static final String USERNAME = "";
+	private static final String PASSWORD = "";
 	
 	
 	public static Connection getConnection() {
