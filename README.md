@@ -1,19 +1,19 @@
 # BankReimbursement
 Rev p1 Reimbursement
 Overview
-A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 4 which allows for the handling of expense reimbursements.
+A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 5 which allows for the handling of expense reimbursements.
 
 ## Technologies
 - Apache-Tomcat-9.0.41
 - Bootstrap 5
 - Jackson Databind
 - Jackson Core
-- Hibernate 4.3.11.Final
-- Java Servlet API 3.1.0
+- Java Servlet API 4.0.1
 - JUnit
 - Log4j API 2.13.0
 - PostgreSQL 42.2.18
-- Mockito 1.8.4
+- Mockito 1.10.19
+- JavaMail 1.6.2
 
 ## Features
 - Submit a reimbursement request
