@@ -9,8 +9,8 @@ A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 5 whi
 - Jackson Databind
 - Jackson Core
 - Java Servlet API 4.0.1
-- JUnit
-- Log4j API 2.13.0
+- JUnit 4.12
+- Log4j API 1.2.17
 - PostgreSQL 42.2.18
 - Mockito 1.10.19
 - JavaMail 1.6.2
@@ -30,7 +30,7 @@ If both of the pre-requisites above are met, go ahead and clone this repo by usi
     git clone https://github.com/chh14025/BankReimbursement
 Once cloned, copy the .war file located within the /target directory and paste it into your tomcat webapps folder.
 
-Once the .war has been exploded, by default you will be able to view the application at http://localhost:8080/ers
+Once the .war has been exploded, by default you will be able to view the application at http://localhost:8080/
 
 Contributors
 William He
