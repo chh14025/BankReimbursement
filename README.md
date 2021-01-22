@@ -3,7 +3,7 @@ Rev p1 Reimbursement
 Overview
 A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 4 which allows for the handling of expense reimbursements.
 
-# Technologies
+## Technologies
 - Apache-Tomcat-9.0.41
 - Bootstrap 5
 - Jackson Databind
