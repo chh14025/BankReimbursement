@@ -8,20 +8,22 @@ A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 4 whi
 - Bootstrap 5
 - Jackson Databind
 - Jackson Core
-Hibernate 4.3.11.Final
-Java Servlet API 3.1.0
-JUnit
-Log4j API 2.13.0
-PostgreSQL 42.2.18
-Mockito 1.8.4
-Features
+- Hibernate 4.3.11.Final
+- Java Servlet API 3.1.0
+- JUnit
+- Log4j API 2.13.0
+- PostgreSQL 42.2.18
+- Mockito 1.8.4
+
+## Features
 Submit a reimbursement request
 Approve/ Deny a reimbursement request
 Add items to your request
-Getting Started / Usage
+
+## Getting Started / Usage
 In order to see this project in action, you will need a few things:
 
-Be sure to have Apache Tomcat 8.5.60 installed.
+Be sure to have Apache Tomcat 9.0.41 installed.
 Be sure to have the Java 8 runtime environment installed.
 If both of the pre-requisites above are met, go ahead and clone this repo by using the below command:
 
