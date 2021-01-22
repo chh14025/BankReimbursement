@@ -16,9 +16,9 @@ A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 4 whi
 - Mockito 1.8.4
 
 ## Features
-Submit a reimbursement request
-Approve/ Deny a reimbursement request
-Add items to your request
+- Submit a reimbursement request
+- Approve/ Deny a reimbursement request
+- Add items to your request
 
 ## Getting Started / Usage
 In order to see this project in action, you will need a few things:
