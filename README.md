@@ -19,6 +19,7 @@ A Web Application built using Java Servelets, Apache Tomcat, and Bootstrap 5 whi
 - Submit a reimbursement request
 - Approve/ Deny a reimbursement request
 - Add items to your request
+- Sends out confirmation emails for each ticket submission
 
 ## Getting Started / Usage
 In order to see this project in action, you will need a few things:
@@ -30,7 +31,7 @@ If both of the pre-requisites above are met, go ahead and clone this repo by usi
     git clone https://github.com/chh14025/BankReimbursement
 Once cloned, copy the .war file located within the /target directory and paste it into your tomcat webapps folder.
 
-Once the .war has been exploded, by default you will be able to view the application at http://localhost:8080/
+Once the .war has been exploded, by default you will be able to view the application at http://localhost:8080/ReimbursementProject/bank
 
 Contributors
 William He
